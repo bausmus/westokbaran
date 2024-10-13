@@ -1,0 +1,57 @@
+{%extends "layout.html"%}
+{%block content%}
+    <body>
+        <h1>Software Interests</h1>
+		<hr>
+			<form method="post" action="http://ss1.ciwcertified.com/cgi-bin/process.pl">
+				<label style="font-weight:bold;">Name:</label><br><br>
+				<label for="fname">First Name:</label><br>
+				<input type="text" id="fname" name="fname"><br><br>
+				<label for="lname">Last Name:</label><br>
+				<input type="text" id="lname" name="lname"><br><br>
+				<hr>
+				<label style="font-weight:bold;">Tell us why you want to enter the software development career field:</label><br><br>
+				<textarea name="self_description" rows="20" cols="40">Begin here...</textarea><br><br>
+				<hr>
+				<label style="font-weight:bold;">Areas of Interest:</label><br><br>
+				<input type="radio" id="front_end" name="interest" value="Front-End">
+				<label for="front_end">Front-End Development</label><br>
+				<input type="radio" id="back_end" name="interest" value="Back-End">
+				<label for="back_end">Back-End Development</label><br>
+				<input type="radio" id="full_stack" name="interest" value="Full-Stack">
+				<label for="full_stack">Full-Stack Development</label><br><br>
+				<hr>
+				<label style="font-weight:bold;">Coding Languages:</label><br><br>
+				<input type="checkbox" id="int1" name="int1" value="C#">
+				<label for="int1">C#</label>
+				<input type="checkbox" id="int2" name="int2" value="Java">
+				<label for="int2">Java</label>
+				<input type="checkbox" id="int3" name="int3" value="HTML">
+				<label for="int3">HTML</label><br><br>
+				<input type="checkbox" id="int4" name="int4" value="CSS">
+				<label for="int4">CSS</label>
+				<input type="checkbox" id="int5" name="int5" value="SQL">
+				<label for="int5">SQL</label>
+				<input type="checkbox" id="int6" name="int6" value="Swift">
+				<label for="int6">Swift</label><br><br>
+				<input type="checkbox" id="int7" name="int7" value="Kotlin">
+				<label for="int7">Kotlin</label>
+				<input type="checkbox" id="int8" name="int8" value="PHP">
+				<label for="int8">PHP</label>
+				<input type="checkbox" id="int9" name="int9" value="TypeScript">
+				<label for="int9">TypeScript</label><br>
+				<hr>
+				<label style="font-weight:bold;">Choose Job Location Type:</label><br><br>
+				<select id="location_type" name="location_type" size="3" multiple>
+					<option value="on_site">On-Site</option>
+					<option value="remote">Remote</option>
+					<option value="hybrid">Hybrid</option>
+				</select><br><br>
+				<hr><br>
+				<input type="submit" value="Submit">
+				<input type="reset" value="Reset"><br><br>
+				<hr>
+			</form>
+    </body>
+</div>
+{%endblock%}
