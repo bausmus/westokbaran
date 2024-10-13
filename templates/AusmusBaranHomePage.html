@@ -1,0 +1,96 @@
+<!DOCTYPE html> 
+<html lang="en">
+    <head>
+        <title>Software Development Career</title>
+        <meta charset="UTF-8">
+		<meta name="description" content="This website contains information about software development.">
+		<meta name="keywords" content="software, programming, coding, software engineering, software development">
+		<meta name="author" content="Baran Ausmus">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="AusmusBaranStyleSheet.css">
+        <script>
+            function navFunction() {
+		var x = document.getElementById("topnav");
+		if (x.className === "topnav") {
+		    x.className += " responsive";
+		} else {
+		    x.className = "topnav";
+		}
+            }
+
+            document.getElementById("career").addEventListener("mouseover", funFunction);
+            document.getElementById("career").addEventListener("mouseout", mouseOut);
+
+            function funFunction() {
+                document.getElementById("career").innerHTML = "This could be you someday!!!";
+            }
+
+            function mouseOut() {
+                document.getElementById("career").innerHTML = "";
+            }
+        </script>
+    </head>
+    <body>
+        <div class="topnav" id="topnav">
+			<a href="AusmusBaranHomePage.html" class="active">Home</a>
+			<a href="SoftwareSummary.html">Software Summary</a>
+			<a href="SoftwareInterests.html">Software Interests</a>
+			<a href="javascript:void(0);" class="icon" onclick="navFunction()">
+			<i class="fa fa-bars"></i>
+			</a>
+		</div>
+        <h1>Software Development</h1>  
+        <hr>
+        <h2>Knowledge/Skills</h2>
+            <p>
+                Software development is a very popular career today, with so many avenues to choose from for your profession. Among those, there are careers in back-end development, front-end<br>
+                development, and full-stack develpment that cover most job opportunities out there. Back-end development primarily covers the logic side of developing websites or desktop/mobile<br>
+                applications. Basically, it is programming the logic that will work with moving data around and handling requests from the user, as well as CRUD operations. Front-end development<br>
+                mainly deals with the user interface (UI). So, it would be programming the views that users look at, user interactions, and front end web and application operations. Lastly, full-stack<br>
+                development covers both back-end, front-end, and also the API layer. Full-stack development has become the most in demand career for companies to choose for hiring developers.
+            </p>
+            <img onmouseover="funFunction(this)" onmouseout="mouseOut(this)" src="software2.jpg" alt="software"  width="500" height="300">
+            <p id="career" style="font-weight:bold;color:goldenrod;font-size:50px;"></p>
+            <hr>
+        <h2>Training/Education</h2>
+            <p>
+                Becoming a software developer can be challenging, but there are many ways to become a developer. There are many people who grew up learning to code at school or on their own as a<br>
+                hobby, and have become great developers in the process. Many employers are willing to hire people without formal training if they show their proficiency to code and design applications.<br>
+                Another route to becoming a software engineer is to obtain formal training by going to college to obtain a degree in computer sceince, informaiton technology, computer engineering,<br>
+                engineering, or mathematics. Employers like to see that people have put in the time to learn all the desired skills for the profession. Lastly, another way to get the needed training<br>
+                is to enroll in a coding bootcamp, technology center, or online program to obtain certifications for completing software development training. This shows employers that you put in the<br>
+                necessary work to develop your skills as a developer.
+            </p>
+            <img src="software1.jpg" alt="software" style="width:500px;height:300px;"><br><br>
+            <a href="https://careerfoundry.com/en/courses/become-a-web-developer/?utm_campaign=127715742932&utm_term=careerfoundry%20web%20development&utm_source=google&utm_medium=cpc&utm_content=522168375837&hsa_mt=p&hsa_ad=522168375837&hsa_ver=3&hsa_tgt=kwd-1435809176868&hsa_net=adwords&hsa_grp=127715742932&hsa_src=g&hsa_cam=1598884275&hsa_acc=1437185464&hsa_kw=careerfoundry%20web%20development&gclid=CjwKCAiA8NKtBhBtEiwAq5aX2IkZ9BuDC9aebCPAV1zl4r2ndhJQk3YEgh77rtEpZTY-de-pBnFIJxoCqwYQAvD_BwE" 
+                target="_blank">CareerFoundry Certification - Check out this certification program!</a>
+        <hr>
+        <h2>Salary/Benefits</h2>
+            <p>
+                The salary and benefits package for a software developer can be very wide randing depending on which type of development, what country you live in, and what state you live in. This<br>
+                website will be showing the salary of develoers in the state of Oklahoma as listed below. Most companies offer a similar benefits package including a 401k match, and paid time off (PTO),<br>
+                and health benefits. Oklahoma software development jobs are very competitive since it is a highly desired career. The more education and experience you have will help you be much more<br>
+                competitive in the job market. Oklahoma also has a large aerospace sector now, which offers many sofware engineering opportunities.
+            </p>
+            <ul>
+                <li>Front-End Developer: $94,319</li>
+                <li>Back-End Developer: $103,214</li>
+                <li>Full-Stack Developer: $102,375</li>
+            </ul>
+            <img src="software3.webp" alt="software" style="width:500px;height:300px;">
+        <hr>
+        <h2>References</h2>
+            <p>
+                Full+Stack+developer salary in Oklahoma - average salary. Talent.com. (n.d.). <br>
+                https://www.talent.com/salary?job=full%2Bstack%2Bdeveloper&location=oklahoma#:~:<br>
+                text=How%20much%20does%20a%20Full%20stack%20developer%20make%20in%20Oklahoma%3F&text=<br>
+                The%20average%20full%20stack%20developer%20salary%20in%20Oklahoma%20is%20%24102%2C375,<br>
+                up%20to%20%24125%2C000%20per%20year<br><br>
+                Back end developer salary: Hourly Rate January 2024 USA - ZipRecruiter. (n.d.). <br>
+                https://www.ziprecruiter.com/Salaries/BACK-END-Developer-Salary<br><br>
+                Salary: Front End Web Developer in Oklahoma City, OK - ziprecruiter. (n.d.-b).<br>
+                https://www.ziprecruiter.com/Salaries/Front-End-Web-Developer-Salary-in-Oklahoma-City,OK
+            </p>
+            <hr>
+    </body>
+</html>
